@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1d3bd6; /* Blue background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: #ffffff; /* White box for login/signup form */
+  border-radius: 8px;
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Input Fields */
+input[type="text"], /* Username */
+  input[type="email"],
+  input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #1d3bd6;
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  background-color: #1d3bd6;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #174bb5; /* Darker blue for hover */
+}
+
+/* Forgot Password and Register Links */
+a {
+  display: block;
+  color: #1d3bd6;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Background Decoration */
+body::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #1434c6;
+  border-radius: 50%;
+  top: 10%;
+  left: -50px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #1434c6;
+  border-radius: 50%;
+  bottom: 10%;
+  right: -80px;
+}
+
+/* Signup Button Styling */
+.signup-button {
+  background-color: #28a745; /* Green color */
+  color: #ffffff;
+}
+
+.signup-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
